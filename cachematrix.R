@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This set of functions calculate and cache the inverse of a square matrix
+## In the event the inverse is already calculated, it returns that value
 
-## Write a short comment describing this function
+## Cache's the inverse of a square matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-##Calculates the Inverse of a Square Matrix
+##Calculates the inverse of a square matrix, 
+#unless the inverse has already been cached then it returns that value
 
 cacheSolve <- function(x, ...) {
   
